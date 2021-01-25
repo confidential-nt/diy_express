@@ -1,0 +1,25 @@
+{
+  "name": "diy_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node init.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/confidential-nt/diy_express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/confidential-nt/diy_express/issues"
+  },
+  "homepage": "https://github.com/confidential-nt/diy_express#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "express": "^4.17.1"
+  }
+}
