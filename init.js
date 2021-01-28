@@ -1,9 +1,5 @@
-import express from "express";
-
-const app = express();
+import app from "./app";
 
 const PORT = 4000;
-
-app.get("/", (req, res) => res.send("hello"));
 
 app.listen(PORT, () => console.log(`Linked to http://localhost:${PORT}`));
