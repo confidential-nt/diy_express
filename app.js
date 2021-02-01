@@ -9,6 +9,7 @@ import routes from "./routes";
 import globalRouter from "./routers/globalRouters";
 import userRouter from "./routers/userRouters";
 import postRouter from "./routers/postRouters";
+import { localsMiddlewares } from "./middlewares";
 
 morgan.token("id", function getId(req) {
   return req.id;
@@ -24,6 +25,8 @@ app.use(function (req, res, next) {
   );
   return next();
 });
+
+app.set("view engine", "pug");
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); //나중에 true fasle 차이 볼것.
@@ -34,6 +37,8 @@ function assignId(req, res, next) {
   req.id = uuid.v4();
   next();
 }
+
+app.use(localsMiddlewares);
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);
