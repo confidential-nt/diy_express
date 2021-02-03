@@ -1,1 +1,11 @@
 extends layouts/main
+
+block content
+    .main-contents.edit-profile
+        form(action=`/users${routes.editProfile}`,method="post")
+            label(for="avatar") Avatar
+            input(type="file",id="avatar",name="avatar")
+            input(type="text",name="name",placeholder="Name")
+            input(type="email",name="email",placeholder="Email")
+            input(type="submit",value="Edit")
+        a.main-contents__link.main-contents__link--change-password(href=`/users${routes.changePassword}`) Change Password     

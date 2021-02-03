@@ -1,6 +1,9 @@
-export const home = (req, res) => res.render("home", { pageTitle: "Home" });
+import posts from "../db";
+
+export const home = (req, res) =>
+  res.render("home", { pageTitle: "Home", posts });
 export const search = (req, res) =>
-  res.render("search", { pageTitle: "Search" });
+  res.render("search", { pageTitle: "Search", posts });
 
 export const postDetail = (req, res) =>
   res.render("postDetail", { pageTitle: "Post Detail" });

@@ -1,1 +1,8 @@
 extends layouts/main
+
+block content
+    .main-contents.login
+        form(action=routes.login, method="post")
+            input(type="email",name="email",required,placeholder="E-MAIL")
+            input(type="password",name="password",required,placeholder="Password")
+            input(type="submit",value="Log In")

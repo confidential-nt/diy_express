@@ -9,9 +9,9 @@ import {
 
 const postRouter = express.Router();
 
-postRouter.get(routes.postDetail, postDetail);
 postRouter.get(routes.editPost, editPost);
 postRouter.get(routes.upload, upload);
 postRouter.get(routes.deletePost, deletePost);
+postRouter.get(routes.postDetail, postDetail);
 
 export default postRouter;

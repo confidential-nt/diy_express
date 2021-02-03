@@ -1,1 +1,10 @@
 extends layouts/main
+
+block content
+    .main-contents.edit-post
+        form(action=`/posts${routes.editPost}`,method="post")
+            input(type="text",placeholder="Title",name="title",required)
+            textarea(name="desc",placeholder="desc")
+            textarea(name="content",placeholder="content",required)
+            input(type="submit",value="Edit")
+        a.main-contents__link.main-contents__link--delete(href=`/posts${routes.deletePost}`) Delete Post    

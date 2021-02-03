@@ -1,1 +1,7 @@
 extends layouts/main
+include mixins/postBlock
+
+block content
+    .main-contents.posts
+        each post in posts
+            +postBlock(post)
