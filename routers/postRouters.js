@@ -4,14 +4,18 @@ import {
   deletePost,
   editPost,
   postDetail,
-  upload,
+  getUpload,
+  postUpload,
 } from "../controllers/postController";
 
 const postRouter = express.Router();
 
 postRouter.get(routes.editPost, editPost);
-postRouter.get(routes.upload, upload);
+
+postRouter.get(routes.upload, getUpload);
+postRouter.post(routes.upload, postUpload);
+
 postRouter.get(routes.deletePost, deletePost);
-postRouter.get(routes.postDetail, postDetail);
+postRouter.get(routes.postDetail(), postDetail);
 
 export default postRouter;

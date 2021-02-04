@@ -25,11 +25,19 @@ const routes = {
   search: SEARCH,
   home: HOME,
   users: USERS,
-  userDetail: USER_DETAIL,
+  userDetail: (id = null) => {
+    if (id) return `/users/${id}`;
+
+    return USER_DETAIL;
+  },
   changePassword: CHANGE_PASSWORD,
   editProfile: EDIT_PROFILE,
   posts: POSTS,
-  postDetail: POST_DETAIL,
+  postDetail: (id = null) => {
+    if (id) return `/posts/${id}`;
+
+    return POST_DETAIL;
+  },
   editPost: EDIT_POST,
   upload: UPLOAD,
   deletePost: DELETE_POST,

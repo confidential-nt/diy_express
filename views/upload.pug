@@ -2,7 +2,7 @@ extends layouts/main
 
 block content
     .main-contents.upload
-        form(action=`/posts${upload}`,method="post")
+        form(action=`/posts${routes.upload}`,method="post")
             input(type="text",placeholder="Title",name="title",required)
             textarea(name="desc",placeholder="desc")
             textarea(name="content",placeholder="content",required)

@@ -4,7 +4,7 @@ include mixins/postBlock
 block content
     .main-contents.search-result
         .search-result__header
-            h2 You're searching for
+            h2 You're searching for #{searchingBy}
         .search-result__result
             each post in posts
                 +postBlock(post)

@@ -1,6 +1,7 @@
 mixin postBlock(post = {})
     .postBlock
-        h2.postBlock__title=post.title
-        p.postBlock__content=post.content
-        .postBlock__info
-            h4=post.author
+        a.postBlock__link(href=routes.postDetail(123445))
+            h2.postBlock__title=post.title
+            p.postBlock__content=post.content
+            .postBlock__info
+                h4=post.author
