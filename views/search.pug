@@ -6,5 +6,8 @@ block content
         .search-result__header
             h2 You're searching for #{searchingBy}
         .search-result__result
-            each post in posts
-                +postBlock(post)
+            if !posts.length
+                p Post Not Found.
+            else 
+                each post in posts
+                    +postBlock(post)    

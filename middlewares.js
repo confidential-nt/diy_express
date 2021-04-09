@@ -1,4 +1,7 @@
 import routes from "./routes";
+// import multer from "multer";
+
+// const multerPost = multer({ dest: "uploads/posts/" });
 
 export const localsMiddlewares = (req, res, next) => {
   res.locals.routes = routes;
@@ -9,3 +12,5 @@ export const localsMiddlewares = (req, res, next) => {
   };
   next();
 };
+
+// export const uploadPost = multerPost.single("content");

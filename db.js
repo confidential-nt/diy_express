@@ -1,64 +1,24 @@
-const posts = [
-  {
-    title: "Everyday I'm hungry.",
-    author: "Kimchi",
-    scrap: 21,
-    comments: [],
-    desc: "The reason I'm hungry.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae tortor ut diam fringilla ultrices at scelerisque ante. In nibh ante, molestie et pharetra at, finibus eget sapien. Nam tellus neque, finibus eu velit eget, aliquam lobortis nibh. Morbi porta egestas tellus, vitae consequat turpis faucibus vel. Donec vel orci ut ex eleifend sagittis. Morbi malesuada tellus vel tellus tincidunt scelerisque. Fusce aliquet consectetur tellus, et porttitor ligula porttitor vitae. Etiam pellentesque id neque a placerat. Mauris sit amet lacinia urna. Integer ac dolor ut orci dignissim fermentum ac vitae dolor. Vestibulum tempus viverra sem, vitae dapibus ipsum sodales nec. Nulla facilisi. Nunc aliquet at metus id accumsan. Duis malesuada tincidunt lorem, non tincidunt magna pellentesque a. Duis fringilla non risus eget euismod. Pellentesque fermentum mi vitae cursus gravida. Suspendisse blandit nisl a est egestas efficitur. Ut consectetur eros quam.",
-    thumnail: "images/cat.jpg",
-  },
-  {
-    title: "Everyday I'm hungry.",
-    author: "Kimchi",
-    scrap: 21,
-    comments: [],
-    desc: "The reason I'm hungry.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae tortor ut diam fringilla ultrices at scelerisque ante. In nibh ante, molestie et pharetra at, finibus eget sapien. Nam tellus neque, finibus eu velit eget, aliquam lobortis nibh. Morbi porta egestas tellus, vitae consequat turpis faucibus vel. Donec vel orci ut ex eleifend sagittis. Morbi malesuada tellus vel tellus tincidunt scelerisque. Fusce aliquet consectetur tellus, et porttitor ligula porttitor vitae. Etiam pellentesque id neque a placerat. Mauris sit amet lacinia urna. Integer ac dolor ut orci dignissim fermentum ac vitae dolor. Vestibulum tempus viverra sem, vitae dapibus ipsum sodales nec. Nulla facilisi. Nunc aliquet at metus id accumsan. Duis malesuada tincidunt lorem, non tincidunt magna pellentesque a. Duis fringilla non risus eget euismod. Pellentesque fermentum mi vitae cursus gravida. Suspendisse blandit nisl a est egestas efficitur. Ut consectetur eros quam.",
-    thumnail: "images/cat.jpg",
-  },
-  {
-    title: "Everyday I'm hungry.",
-    author: "Kimchi",
-    scrap: 21,
-    comments: [],
-    desc: "The reason I'm hungry.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae tortor ut diam fringilla ultrices at scelerisque ante. In nibh ante, molestie et pharetra at, finibus eget sapien. Nam tellus neque, finibus eu velit eget, aliquam lobortis nibh. Morbi porta egestas tellus, vitae consequat turpis faucibus vel. Donec vel orci ut ex eleifend sagittis. Morbi malesuada tellus vel tellus tincidunt scelerisque. Fusce aliquet consectetur tellus, et porttitor ligula porttitor vitae. Etiam pellentesque id neque a placerat. Mauris sit amet lacinia urna. Integer ac dolor ut orci dignissim fermentum ac vitae dolor. Vestibulum tempus viverra sem, vitae dapibus ipsum sodales nec. Nulla facilisi. Nunc aliquet at metus id accumsan. Duis malesuada tincidunt lorem, non tincidunt magna pellentesque a. Duis fringilla non risus eget euismod. Pellentesque fermentum mi vitae cursus gravida. Suspendisse blandit nisl a est egestas efficitur. Ut consectetur eros quam.",
-    thumnail: "images/cat.jpg",
-  },
-  {
-    title: "Everyday I'm hungry.",
-    author: "Kimchi",
-    scrap: 21,
-    comments: [],
-    desc: "The reason I'm hungry.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae tortor ut diam fringilla ultrices at scelerisque ante. In nibh ante, molestie et pharetra at, finibus eget sapien. Nam tellus neque, finibus eu velit eget, aliquam lobortis nibh. Morbi porta egestas tellus, vitae consequat turpis faucibus vel. Donec vel orci ut ex eleifend sagittis. Morbi malesuada tellus vel tellus tincidunt scelerisque. Fusce aliquet consectetur tellus, et porttitor ligula porttitor vitae. Etiam pellentesque id neque a placerat. Mauris sit amet lacinia urna. Integer ac dolor ut orci dignissim fermentum ac vitae dolor. Vestibulum tempus viverra sem, vitae dapibus ipsum sodales nec. Nulla facilisi. Nunc aliquet at metus id accumsan. Duis malesuada tincidunt lorem, non tincidunt magna pellentesque a. Duis fringilla non risus eget euismod. Pellentesque fermentum mi vitae cursus gravida. Suspendisse blandit nisl a est egestas efficitur. Ut consectetur eros quam.",
-    thumnail: "images/cat.jpg",
-  },
-  {
-    title: "Everyday I'm hungry.",
-    author: "Kimchi",
-    scrap: 21,
-    comments: [],
-    desc: "The reason I'm hungry.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae tortor ut diam fringilla ultrices at scelerisque ante. In nibh ante, molestie et pharetra at, finibus eget sapien. Nam tellus neque, finibus eu velit eget, aliquam lobortis nibh. Morbi porta egestas tellus, vitae consequat turpis faucibus vel. Donec vel orci ut ex eleifend sagittis. Morbi malesuada tellus vel tellus tincidunt scelerisque. Fusce aliquet consectetur tellus, et porttitor ligula porttitor vitae. Etiam pellentesque id neque a placerat. Mauris sit amet lacinia urna. Integer ac dolor ut orci dignissim fermentum ac vitae dolor. Vestibulum tempus viverra sem, vitae dapibus ipsum sodales nec. Nulla facilisi. Nunc aliquet at metus id accumsan. Duis malesuada tincidunt lorem, non tincidunt magna pellentesque a. Duis fringilla non risus eget euismod. Pellentesque fermentum mi vitae cursus gravida. Suspendisse blandit nisl a est egestas efficitur. Ut consectetur eros quam.",
-    thumnail: "images/cat.jpg",
-  },
-  {
-    title: "Everyday I'm hungry.",
-    author: "Kimchi",
-    scrap: 21,
-    comments: [],
-    desc: "The reason I'm hungry.",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae tortor ut diam fringilla ultrices at scelerisque ante. In nibh ante, molestie et pharetra at, finibus eget sapien. Nam tellus neque, finibus eu velit eget, aliquam lobortis nibh. Morbi porta egestas tellus, vitae consequat turpis faucibus vel. Donec vel orci ut ex eleifend sagittis. Morbi malesuada tellus vel tellus tincidunt scelerisque. Fusce aliquet consectetur tellus, et porttitor ligula porttitor vitae. Etiam pellentesque id neque a placerat. Mauris sit amet lacinia urna. Integer ac dolor ut orci dignissim fermentum ac vitae dolor. Vestibulum tempus viverra sem, vitae dapibus ipsum sodales nec. Nulla facilisi. Nunc aliquet at metus id accumsan. Duis malesuada tincidunt lorem, non tincidunt magna pellentesque a. Duis fringilla non risus eget euismod. Pellentesque fermentum mi vitae cursus gravida. Suspendisse blandit nisl a est egestas efficitur. Ut consectetur eros quam.",
-    thumnail: "images/cat.jpg",
-  },
-];
+import dotenv from "dotenv";
+dotenv.config();
+import mongoose from "mongoose";
 
-export default posts;
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useFindAndModify: false, //직접 쓰면서 true랑은 차이점이 뭔지 알아봐야 할듯
+  })
+  .catch(handleError);
+
+const db = mongoose.connection; //For practical reasons, a Connection equals a Db.
+
+const handleOpen = () => console.log("Connect to Data Base!");
+const handleError = (error) =>
+  console.log(`Fail to connect to Data Base!: ${error}`);
+
+db.once("open", handleOpen);
+
+mongoose.connection.on("error", (err) => {
+  handleError(err);
+});
+
+//내일 더 자세히 옵션과 함수들에 대해 공부해보는 걸로

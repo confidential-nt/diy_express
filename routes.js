@@ -38,9 +38,17 @@ const routes = {
 
     return POST_DETAIL;
   },
-  editPost: EDIT_POST,
+  editPost: (id = null) => {
+    if (id) return `/posts/${id}/edit`;
+
+    return EDIT_POST;
+  },
   upload: UPLOAD,
-  deletePost: DELETE_POST,
+  deletePost: (id = null) => {
+    if (id) return `/posts/${id}/delete`;
+
+    return DELETE_POST;
+  },
 };
 
 export default routes;

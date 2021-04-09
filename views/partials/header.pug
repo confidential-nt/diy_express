@@ -1,6 +1,9 @@
 header.main-header
     h1.main-header__logo
         a(href=routes.home) #{siteName}
+    .main-header__search 
+        form(action=routes.search,method="get")
+            input(type="text", placeholder="검색어를 입력하세요", name="term")    
     ul.main-header__items
         if !user.isAuthenticated
             li.items__item

@@ -1,1 +1,22 @@
 extends layouts/main
+
+block content
+    .post__container
+        header.post__header
+            .post__header-top 
+                h2.post__title=post.title
+                p.post__desc=post.description
+            .post__header-bottom 
+                .post__header-col 
+                    span.post__views=post.views
+                    span.post__date=post.date
+                .post__header-col 
+                    a(href=routes.editPost(post.id)) Edit Post        
+        article.post__article 
+            p.post__content=post.content      
+    .post__comments
+        .post__comment-number 
+            if post.comments.length === 1
+                span 1 comment 
+            else 
+                span #{post.comments.length} comments    

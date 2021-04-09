@@ -1,7 +1,7 @@
 mixin postBlock(post = {})
     .postBlock
-        a.postBlock__link(href=routes.postDetail(123445))
+        a.postBlock__link(href=routes.postDetail(post.id))
             h2.postBlock__title=post.title
             p.postBlock__content=post.content
             .postBlock__info
-                h4=post.author
+                h4=post.views
